@@ -7,23 +7,23 @@ import styles from './Header.module.scss';
 
 export const Header = () => {
     return (
-        <header className={styles.header}>
-            <div className={styles.header__inner}>
-                <div className={styles.header__title}>
+        <header className={styles.root}>
+            <div className={styles.root__inner}>
+                <div className={styles.root__title}>
                     <div>Азад</div>
                     <div className={styles.ampersand}>&amp;</div>
                     <div>Курсум</div>
-                    <div className={cn(styles.header__img, styles.header__img4)}>
+                    <div className={cn(styles.root__img, styles.root__img4)}>
                         <img src={rings} alt="rings" />
                     </div>
                 </div>
-                <div className={cn(styles.header__img, styles.header__img1)}>
+                <div className={cn(styles.root__img, styles.root__img1)}>
                     <img src={flower} alt="flowers" />
                 </div>
-                <div className={cn(styles.header__img, styles.header__img2)}>
+                <div className={cn(styles.root__img, styles.root__img2)}>
                     <img src={flower} alt="flowers" />
                 </div>
-                <div className={cn(styles.header__img, styles.header__img3)}>
+                <div className={cn(styles.root__img, styles.root__img3)}>
                     <img src={greens} alt="greens" />
                 </div>
             </div>

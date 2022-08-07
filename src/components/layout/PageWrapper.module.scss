@@ -1,0 +1,17 @@
+@import 'styles/default.scss';
+
+.root {
+    padding: 5vw;
+    background-color: $main_bg;
+    box-sizing: border-box;
+    position: relative;
+
+    &__inner {
+        box-sizing: border-box;
+        position: relative;
+        background-color: $page_bg;
+        border-radius: 2vw;
+        padding: 5vw;
+        box-shadow: 2px 2px 15px 8px rgba(65, 150, 84, 0.15);
+    }
+}
