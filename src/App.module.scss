@@ -10,7 +10,7 @@ $text_color: rgba(0, 97, 0, 0.9);
   min-height: 650px;
   padding: 5vw;
   box-sizing: border-box;
-  background-color: $main_bg;
+  background-color: #fdfdfd;
   overflow: hidden;
 
   &__inner {
@@ -23,6 +23,7 @@ $text_color: rgba(0, 97, 0, 0.9);
     border-radius: 0 0 8vw;
     box-sizing: border-box;
     box-shadow: 2px 2px 15px 8px rgba(65, 150, 84, 0.15);
+    background-color: $main_bg;
   }
 
   &__title {
