@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import cn from 'classnames';
+import styles from './App.module.scss';
+import flower from './images/flower.png';
+import greens from './images/greens.png';
+import rings from './images/rings.png';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className={styles.header}>
+                <div className={styles.header__inner}>
+                    <div className={styles.header__title}>
+                        <div>Азад</div>
+                        <div className={styles.ampersand}>&amp;</div>
+                        <div>Курсум</div>
+                        <div className={cn(styles.header__img, styles.header__img4)}>
+                            <img src={rings} alt="rings" />
+                        </div>
+                    </div>
+                    <div className={cn(styles.header__img, styles.header__img1)}>
+                        <img src={flower} alt="flowers" />
+                    </div>
+                    <div className={cn(styles.header__img, styles.header__img2)}>
+                        <img src={flower} alt="flowers" />
+                    </div>
+                    <div className={cn(styles.header__img, styles.header__img3)}>
+                        <img src={greens} alt="greens" />
+                    </div>
+                </div>
+            </header>
+        </div>
+    );
 }
 
 export default App;
