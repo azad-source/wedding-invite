@@ -4,7 +4,7 @@ import styles from './Timer.module.scss';
 
 interface Props {
     date: Date;
-    className: string | undefined;
+    className?: string;
 }
 
 export const Timer: React.FC<Props> = ({ date, className }) => {
