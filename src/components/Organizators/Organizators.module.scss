@@ -1,0 +1,23 @@
+@import 'styles/default.scss';
+
+.items {
+  .item {
+    padding: 18px 0;
+    text-align: center;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.9);
+
+    &__link {
+      color: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+@media screen and (max-width: $siteWidthMobile) {
+  .items {
+    .item {
+      padding: 16px 0;
+      font-size: 17px;
+    }
+  }
+}

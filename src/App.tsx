@@ -3,10 +3,10 @@ import { Header } from 'components/Header/Header';
 import { DateTime } from 'components/DateTime/DateTime';
 import { Maps } from 'components/Map/Map';
 import { Contacts } from 'components/Contacts/Contacts';
-import mainBg from 'images/mainBg.png';
 import styles from './App.module.scss';
 import { Menu } from 'components/Menu/Menu';
 import { MenuMobile } from 'components/Menu/MenuMobile';
+import { Organizators } from 'components/Organizators/Organizators';
 
 const menuItems = [
     {
@@ -21,6 +21,10 @@ const menuItems = [
         id: 'location',
         caption: 'Расположение',
     },
+    {
+        id: 'organizators',
+        caption: 'Организаторы',
+    },
 ];
 
 function App() {
@@ -33,6 +37,7 @@ function App() {
                 <DateTime />
                 <Contacts />
                 <Maps />
+                <Organizators />
             </div>
         </div>
     );
