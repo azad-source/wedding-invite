@@ -1,3 +1,15 @@
+@import 'styles/default.scss';
+
 .root {
-    display: block;
+  display: block;
+}
+
+.map {
+  height: 700px;
+}
+
+@media screen and (max-width: $siteWidthMobile) {
+  .map {
+    height: 300px;
+  }
 }

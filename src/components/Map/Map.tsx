@@ -78,7 +78,7 @@ export const Maps: React.FC<Props> = ({ className }) => {
                 Расположение
             </div>
             <div className={cn(styles.root, className)}>
-                <div id="map" style={{ width: '100%', height: '700px' }}></div>
+                <div id="map" style={{ width: '100%' }} className={styles.map}></div>
             </div>
         </PageWrapper>
     );

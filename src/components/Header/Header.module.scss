@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 5vw);
+  height: calc(100vh - 2vh);
   box-sizing: border-box;
 
   &__title {
@@ -47,8 +47,6 @@
 
 @media screen and (max-width: $siteWidthMobile) {
   .root {
-    padding: 10vw;
-
     &__title {
       font-size: 8vw;
       padding-bottom: 14vw;
@@ -58,6 +56,12 @@
         margin-top: 10vw;
         margin-bottom: 4vw;
       }
+    }
+
+    &__rings {
+      padding: 0 8px;
+      width: 100px;
+      margin-top: 30px;
     }
   }
 }

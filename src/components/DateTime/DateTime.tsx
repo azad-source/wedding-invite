@@ -9,7 +9,7 @@ export const DateTime = () => {
         <PageWrapper>
             <div className={styles.root} id="datetime">
                 <div className={pageStyles.h1}>Дорогие родные и друзья!</div>
-                <div className={styles.root__description}>
+                <div className={pageStyles.description}>
                     <div>
                         Приглашаем Вас на торжество, посвещенное нашему&nbsp;бракосочетанию которое
                         состоится
@@ -23,7 +23,7 @@ export const DateTime = () => {
                 </div>
                 <Timer
                     className={styles.root__timer}
-                    date={new Date(2022, 8, 4, 20, 3, 0)}
+                    date={new Date(2022, 9, 15, 17, 0, 0)}
                     timerTitle="До начала свадьбы осталось:"
                 />
                 {/* new Date(2022, 9, 15, 17, 0, 0) */}
