@@ -6,15 +6,13 @@ import { PageWrapper } from 'components/layout/PageWrapper';
 
 export const Header = () => {
     return (
-        <PageWrapper bg={headerBg}>
-            <div className={styles.root}>
-                <div className={styles.root__title}>
-                    <div>Азад</div>
-                    <div className={styles.root__rings}>
-                        <img src={rings} alt="rings" />
-                    </div>
-                    <div>Курсум</div>
+        <PageWrapper bg={headerBg} className={styles.root}>
+            <div className={styles.root__title}>
+                <div>Азад</div>
+                <div className={styles.root__rings}>
+                    <img src={rings} alt="rings" />
                 </div>
+                <div>Курсум</div>
             </div>
         </PageWrapper>
     );
