@@ -11,13 +11,19 @@ interface Props {
 export const Contacts: React.FC<Props> = ({ className }) => {
     return (
         <PageWrapper>
-            <div className={pageStyles.h1} id="contacts">Контактная информация</div>
+            <div className={pageStyles.h1} id="contacts">
+                Контактная информация
+            </div>
             <div className={cn(styles.root, className)}>
                 <div className={pageStyles.description}>
                     На нашей свадьбе будет работать координатор Евгения&nbsp;ЛЕОНОВА.
+                    <br />
                     <br /> С пожеланиями и вопросами относительно свадебного дня Вы можете
-                    обратиться к ней любым удобным способом по номеру: +79171244133
-                    (telegram/whatsapp)
+                    обратиться к ней любым удобным способом по номеру:
+                    <a href="tel:+79171244133" className={styles.phone}>
+                        79171244133
+                    </a>
+                    &nbsp;(telegram/whatsapp)
                 </div>
             </div>
         </PageWrapper>
