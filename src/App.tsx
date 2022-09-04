@@ -25,7 +25,7 @@ const menuItems = [
 
 function App() {
     return (
-        <div className={styles.root} style={{ backgroundImage: `url(${mainBg})` }}>
+        <div className={styles.root}>
             <Menu items={menuItems} />
             <MenuMobile items={menuItems} />
             <div className={styles.content}>

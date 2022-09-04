@@ -1,13 +1,21 @@
+@import 'styles/default.scss';
+
 .root {
-    background-repeat: repeat;
-    background-attachment: fixed;
-    padding: 2vw;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    width: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 2vw;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  width: 100%;
 }
 
 .content {
-    flex-grow: 1;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: $siteWidthMobile) {
+  .root {
+    padding: 0px;
+  }
 }

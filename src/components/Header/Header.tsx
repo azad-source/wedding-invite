@@ -1,5 +1,4 @@
 import * as React from 'react';
-import cn from 'classnames';
 import headerBg from 'images/headerBg.jpg';
 import rings from 'images/rings.png';
 import styles from './Header.module.scss';
