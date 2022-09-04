@@ -74,7 +74,9 @@ function init() {
 export const Maps: React.FC<Props> = ({ className }) => {
     return (
         <PageWrapper>
-            <div className={pageStyles.h1}>Расположение</div>
+            <div className={pageStyles.h1} id="location">
+                Расположение
+            </div>
             <div className={cn(styles.root, className)}>
                 <div id="map" style={{ width: '100%', height: '700px' }}></div>
             </div>

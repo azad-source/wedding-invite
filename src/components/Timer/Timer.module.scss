@@ -1,9 +1,19 @@
 @import 'styles/default.scss';
 
 .root {
-  display: flex;
   padding: 5px;
   box-sizing: border-box;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__timerTitle {
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
 
   &__item {
     text-align: center;

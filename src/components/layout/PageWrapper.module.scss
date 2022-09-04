@@ -1,16 +1,19 @@
+@import 'styles/colors.scss';
 @import 'styles/default.scss';
 
 .root {
-    margin-bottom: 10vw;
+  margin-bottom: 10vw;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 2vw;
+  background-color: $page_bg;
+
+  &__inner {
     box-sizing: border-box;
     position: relative;
-
-    &__inner {
-        box-sizing: border-box;
-        position: relative;
-        background-color: $page_bg;
-        border-radius: 2vw;
-        padding: 5vw;
-        box-shadow: 2px 2px 15px 8px rgba(65, 150, 84, 0.15);
-    }
+    overflow: hidden;
+    padding: 5vw;
+    box-shadow: 2px 2px 15px 8px rgba(65, 150, 84, 0.15);
+    background-color: rgba(0, 0, 0, 0.05);
+  }
 }

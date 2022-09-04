@@ -1,100 +1,51 @@
+@import 'styles/colors.scss';
 @import 'styles/default.scss';
 
 .root {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 650px;
-  margin-bottom: 10vw;
+  height: calc(100vh - 5vw);
   box-sizing: border-box;
-  background-color: $main_bg;
-
-  &__inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 0 4vw;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 15px 8px rgba(65, 150, 84, 0.15);
-    background-color: $page_bg;
-  }
 
   &__title {
-    font-size: 4vw;
+    width: 100%;
+    font-size: 60px;
     letter-spacing: 2px;
     color: $text_color;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     text-align: center;
-    border-bottom: 2px solid $text_color;
-    padding-bottom: 8vw;
     position: relative;
-
-    .ampersand {
-      font-size: 2.5vw;
-      margin-top: 4vw;
-    }
+    padding: 100px 0;
+    margin: 0 -5vw;
+    background: linear-gradient(
+      0deg,
+      rgba(185, 200, 180, 0.4) 0%,
+      rgba(190, 200, 190, 0.5) 35%,
+      rgba(185, 200, 180, 0.4) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  &__img {
-    position: absolute;
-    z-index: 5;
+  &__rings {
+    padding: 0 8px;
+    box-sizing: border-box;
+    width: 150px;
+    margin-top: 50px;
 
     img {
+      filter: grayscale(0.35);
       width: 100%;
       height: auto;
       object-fit: contain;
-      filter: saturate(1.5);
-    }
-  }
-
-  &__img1,
-  &__img2 {
-    width: 20vw;
-  }
-
-  &__img1 {
-    top: 0;
-    right: 0;
-    transform: translate(35%, -50%) scale(1, -1);
-  }
-
-  &__img2 {
-    left: 0;
-    bottom: 0;
-    transform: translate(-35%, 35%) scale(-1, 1);
-  }
-
-  &__img3 {
-    left: 0;
-    top: 0;
-    transform: translate(-10%, -15%);
-    width: 30vw;
-
-    img {
-      filter: saturate(1);
-    }
-  }
-
-  &__img4 {
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 55%);
-    background: $page_bg;
-    padding: 0 8px;
-    box-sizing: border-box;
-    width: 7vw;
-
-    img {
-      filter: grayscale(0.25);
     }
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $siteWidthMobile) {
   .root {
     padding: 10vw;
 
@@ -107,19 +58,6 @@
         margin-top: 10vw;
         margin-bottom: 4vw;
       }
-    }
-
-    &__img1,
-    &__img2 {
-      width: 35vw;
-    }
-
-    &__img3 {
-      width: 50vw;
-    }
-
-    &__img4 {
-      width: 15vw;
     }
   }
 }

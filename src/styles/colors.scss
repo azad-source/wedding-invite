@@ -1,0 +1,30 @@
+$main_bg: #fdfdfd;
+$page_bg: #f5ffff;
+$text_color: rgba(33, 77, 33, 0.9);
+
+/** Backgrounds */
+$defaultBg: rgb(61, 68, 107);
+$headerBg: linear-gradient(
+  110deg,
+  rgb(234, 238, 250) 0%,
+  rgb(235, 237, 243) 30%,
+  rgb(255, 255, 255) 100%
+);
+$footerBg: $headerBg;
+$defaultButtonBg: $defaultBg;
+$errorMessage: rgb(220, 0, 0);
+
+/** Text */
+$mainText: $defaultBg;
+$topMenuLink: $defaultBg;
+$linkColor: rgba(4, 16, 117, 0.76);
+
+$darkBg: rgb(60, 64, 67);
+$darkBgHeader: rgb(36, 39, 41);
+$darkBgFooter: $darkBgHeader;
+$darkTextColor: #ddd;
+$darkBorderColor: #888;
+$darkBgContent: rgb(43, 47, 49);
+$darkBgInput: #ddd;
+$darkBgInputText: #333;
+$darkBgInputPlaceholder: #777;

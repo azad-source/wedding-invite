@@ -7,7 +7,7 @@ import pageStyles from 'styles/page.module.scss';
 export const DateTime = () => {
     return (
         <PageWrapper>
-            <div className={styles.root}>
+            <div className={styles.root} id="datetime">
                 <div className={pageStyles.h1}>Дорогие родные и друзья!</div>
                 <div className={styles.root__description}>
                     <div>
@@ -21,7 +21,12 @@ export const DateTime = () => {
                         по&nbsp;адресу&nbsp;г.Тольятти ул. Комзина 6, зал &laquo;Зеркальный&raquo;
                     </div>
                 </div>
-                <Timer className={styles.root__timer} date={new Date(2022, 9, 15, 17, 0, 0)} />
+                <Timer
+                    className={styles.root__timer}
+                    date={new Date(2022, 8, 4, 20, 3, 0)}
+                    timerTitle="До начала свадьбы осталось:"
+                />
+                {/* new Date(2022, 9, 15, 17, 0, 0) */}
             </div>
         </PageWrapper>
     );

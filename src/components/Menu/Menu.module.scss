@@ -1,0 +1,71 @@
+@import 'styles/default.scss';
+@import 'styles/colors.scss';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 20px;
+  width: 230px;
+  height: 80vh;
+  background-color: $page_bg;
+  padding: 20px 10px;
+  margin-right: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  border-radius: 16px;
+}
+
+.menuItem {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.menuItem {
+  color: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.menuItemSign {
+  min-width: 85px;
+  font-size: 14px;
+  border-left: 1px solid #aaa;
+  margin-left: 15px !important;
+  padding-left: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+a.menuItemSign {
+  color: #aaa;
+  line-height: 1.4;
+}
+
+.logoutLink {
+  padding: 0 15px;
+  min-width: unset;
+  color: $mainText;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: $siteWidthMobile) {
+  .root {
+    display: none;
+  }
+}
